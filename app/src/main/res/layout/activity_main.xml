@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#151B22"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -24,7 +25,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn2"
@@ -37,7 +39,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn3"
@@ -47,7 +50,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn4"
@@ -57,7 +61,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn5"
@@ -70,7 +75,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn6"
@@ -80,7 +86,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn7"
@@ -90,7 +97,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn8"
@@ -102,7 +110,8 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Btn9"
@@ -112,20 +121,38 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:text=""
-            android:textSize="50sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
     </androidx.gridlayout.widget.GridLayout>
 
     <TextView
         android:id="@+id/textView"
+        android:fontFamily="@font/carmen_sans_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:text=""
-        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/gridLayout"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <ImageView
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/replay" />
 </androidx.constraintlayout.widget.ConstraintLayout>

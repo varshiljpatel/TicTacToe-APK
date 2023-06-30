@@ -9,7 +9,13 @@ class TicTacToeGame {
         if (board[row][col].isEmpty() && !gameWon) {
             board[row][col] = currentPlayer
             checkWin(row, col)
-            currentPlayer = if (currentPlayer == "X") "O" else "X"
+            currentPlayer = if (currentPlayer == "X" && !gameWon) {
+                "O"
+            } else if (currentPlayer == "O" && !gameWon) {
+                "X"
+            } else {
+                currentPlayer
+            }
             return true
         }
         return false
@@ -42,7 +48,7 @@ class TicTacToeGame {
                 }
             }
         }
-        return true
+        return !gameWon
     }
 
     fun getCurrentPlayer(): String {
